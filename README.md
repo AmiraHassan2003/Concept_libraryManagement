@@ -1,40 +1,42 @@
-Library Management System (Functional Paradigm)
+# Library Management System (Functional Paradigm)
 
-Overview
+## Overview
 
-The Library Management System is designed to handle books, members, and borrowings using a functional programming approach. The system includes functionalities such as adding, updating, searching, and deleting books and members, as well as managing borrowing records.
+ - The Library Management System is designed to handle books, members, and borrowings using a functional programming approach. The system includes functionalities such as adding, updating, searching, and deleting books and members, as well as managing borrowing records.
 
-Features
+## Features
 
-1. Book Management
+### 1. Book Management
 
-Add a new book
+ - Add a new book
 
-Remove a book by ID
+ - Remove a book by ID
 
-Search for books by title, author, or genre
+ - Search for books by title, author, or genre
 
-Update book details (title, author, genre)
+ - Update book details (title, author, genre)
 
-Retrieve all books
+ - Retrieve all books
 
-2. Member Management
+### 2. Member Management
 
-Add a new member
+ - Add a new member
 
-View member details by ID
+ - View member details by ID
 
-Update member name or phone number
+ - Update member name or phone number
 
-3. Borrowing Management
+### 3. Borrowing Management
 
-Borrow a book (store borrowing details: member ID, book ID, borrow and return date)
+ - Borrow a book (store borrowing details: member ID, book ID, borrow and return date)
 
-View borrowing history for a specific book
+ - View borrowing history for a specific book
 
-View borrowing history for a specific member
+ - View borrowing history for a specific member
 
-Project Structure
+
+
+## Project Structure
 
 libraryManagement_FunctionalParadigm/
 │── book.py            # Handles book-related functionalities
@@ -42,73 +44,53 @@ libraryManagement_FunctionalParadigm/
 │── borrowings.py      # Handles borrowing transactions
 │── main.py            # Entry point of the system
 
-How to Use
 
-Manage Books
+## How to Use
 
-Add a book: book.addBook("title", "author", "genre")
+### Manage Books
 
-Remove a book: book.removeBook(book_id)
+ - Add a book: book.addBook("title", "author", "genre")
 
-Search books:
+ - Remove a book: book.removeBook(book_id)
 
-By Title: book.searchTitleBook("title", titles, authors, genres)
+### Search books:
 
-By Author: book.searchAuthorBook("author", titles, authors, genres)
+ - By Title: book.searchTitleBook("title", titles, authors, genres)
 
-By Genre: book.searchGenreBook("genre", titles, authors, genres)
+ - By Author: book.searchAuthorBook("author", titles, authors, genres)
 
-Update book details:
+ - By Genre: book.searchGenreBook("genre", titles, authors, genres)
 
-Title: book.updateTitle(id, "new_title", ids_book, authors, genres)
+### Update book details:
 
-Author: book.updateAuthor(id, "new_author", ids_book, titles, genres)
+ - Title: book.updateTitle(id, "new_title", ids_book, authors, genres)
 
-Genre: book.updateGenre(id, "new_genre", ids_book, titles, authors)
+ - Author: book.updateAuthor(id, "new_author", ids_book, titles, genres)
 
-View all books: book.getAllBooks(titles, authors, genres)
+ - Genre: book.updateGenre(id, "new_genre", ids_book, titles, authors)
 
-Manage Members
+ - View all books: book.getAllBooks(titles, authors, genres)
 
-Add a member: member.addMember("name", "phone")
+### Manage Members
 
-View a member: member.viewMember(id, names, phones)
+ - Add a member: member.addMember("name", "phone")
 
-Update member details:
+ - View a member: member.viewMember(id, names, phones)
 
-Name: member.updateName(id, "new_name", ids_member, phones)
+### Update member details:
 
-Phone: member.updatePhone(id, "new_phone", ids_member, names)
+ - Name: member.updateName(id, "new_name", ids_member, phones)
 
-Manage Borrowings
+ - Phone: member.updatePhone(id, "new_phone", ids_member, names)
 
-Borrow a book: borrow.borrowBook(member_id, book_id, "borrow_date", "return_date", booksList, memberBorrowingList)
+### Manage Borrowings
 
-View borrowing history:
+ - Borrow a book: borrow.borrowBook(member_id, book_id, "borrow_date", "return_date", booksList, memberBorrowingList)
 
-By Book ID: borrow.historyBook(book_id)
+### View borrowing history:
 
-By Member ID: borrow.historyMember(member_id)
+ - By Book ID: borrow.historyBook(book_id)
 
-Requirements
+ - By Member ID: borrow.historyMember(member_id)
 
-Python 3.x
-
-Future Enhancements
-
-Implement a GUI for better user experience
-
-Store data in a database instead of lists
-
-Add a feature to track overdue books
-
-Implement authentication for library staff
-
-Contributors
-
-Amira Hassan
-
-License
-
-This project is open-source and free to use for educational purposes.
 
