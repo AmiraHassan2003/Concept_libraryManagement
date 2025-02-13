@@ -39,9 +39,13 @@
 ## Project Structure
 
 libraryManagement_FunctionalParadigm/
+
 │── book.py            # Handles book-related functionalities
+
 │── member.py          # Handles member-related functionalities
+
 │── borrowings.py      # Handles borrowing transactions
+
 │── main.py            # Entry point of the system
 
 
